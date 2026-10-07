@@ -14,12 +14,12 @@ int main()
     scanf("%lf", &num2);
 
     printf("Enter operation (+, -, *, /): \n");
-    scanf("%c", operation_select);
+    scanf(" %c", &operation_select);
 
-    if (operation_select == "+") {
+    if (operation_select == '+') {
         double result = num1 + num2;
         printf("result: %lf", result);
-    } else if (operation_select == "-") {
+    } else if (operation_select == '-') {
         double result = num1 - num2;
         printf("result: %lf", result);
     } else {
